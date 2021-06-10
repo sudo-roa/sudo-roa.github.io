@@ -1,0 +1,52 @@
+
+header h1{
+    text-align: center;
+}
+
+.memberBox{
+    display: inline-block; 
+    border: solid 1px #000000;
+    width: 240px;
+    height: 280px;
+    margin: 10px;
+    text-align: center;
+}
+.Name{
+    height: 40px;
+    font-weight: bold;
+}
+
+
+.work{
+    height: 40px;
+}
+
+.workImage{
+    width: 220px;
+    height: 140px;
+    border: solid 1px #000000;
+    /* 写真が入ったらborderは消す！ */
+    margin:10px auto;
+}
+
+.twitter{
+    width:100%;
+    text-align: unset;
+    padding: auto 0px;
+}
+
+.twitterIcon{
+    width: 30px;
+    height: 30px;
+    margin: auto 0px;
+    border-radius: 15px 15px 15px 15px;
+
+}
+
+.twitterID{
+    margin: auto 0px;
+}
+    
+.container{
+    margin-top: 20px;
+}
