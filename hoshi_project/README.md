@@ -131,7 +131,7 @@
 ***
 ## 参考 
 [Github.ioによる公開方法(Progate)](https://prog-8.com/docs/github-pages)
-[【無料】間取り図作成フリーソフト20個の中から選んだおすすめ10選！](https://peraichi.com/landing_pages/view/madorisoft10/)
+<br>[【無料】間取り図作成フリーソフト20個の中から選んだおすすめ10選！](https://peraichi.com/landing_pages/view/madorisoft10/)
 ***
 
 最後に、
