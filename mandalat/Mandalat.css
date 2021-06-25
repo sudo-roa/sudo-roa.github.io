@@ -1,0 +1,93 @@
+
+#wrapper{
+  flex: auto;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 720px;
+}
+
+#initialInput {
+  margin:0px auto 0px auto;
+  width: 400px;
+  height: 100px; 
+  /* padding: 150px; */
+}
+
+#initialInput p{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+#initialInput input{
+  display: block;
+  float: left;
+  margin-left: 50px;
+  margin-right: 7px;
+}
+
+#initialInput button{
+  display: block;
+  text-align: center;
+  float: left;
+}
+
+#parentTable{
+  flex: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.childTable{
+  flex: auto;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.textarea{
+  width: 90%;
+  height: 45px;
+  /* width: 135px;
+  height: 45px; */
+}
+
+#target11{
+  background-color: #E60012;
+  flex: auto;
+}
+
+#target12{
+  background-color: #fcc800;
+  flex: auto;
+}
+
+#target13{
+  background-color: #8fc31f;
+  flex: auto;
+}
+
+#target21{
+  background-color: #e5006a;
+  flex: auto;
+}
+
+#target23{
+  background-color: #009b6b;
+  flex: auto;
+}
+
+#target31{
+  background-color: #920783;
+  flex: auto;
+}
+
+#target32{
+  background-color: #00479d;
+  flex: auto;
+}
+
+#target33{
+  background-color: #00a0e9;
+  flex: auto;
+}
+
