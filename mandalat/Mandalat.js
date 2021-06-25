@@ -137,17 +137,17 @@ function changeObject(){
   var innerObject13 = document.querySelector('#innerObject13');
   var innerObject21 = document.querySelector('#innerObject21');
   var innerObject23 = document.querySelector('#innerObject23');
-  // var innerObject31 = document.querySelector('#innerObject31');
-  // var innerObject32 = document.querySelector('#innerObject32');
-  // var innerObject33 = document.querySelector('#innerObject33');
+  var innerObject31 = document.querySelector('#innerObject31');
+  var innerObject32 = document.querySelector('#innerObject32');
+  var innerObject33 = document.querySelector('#innerObject33');
   var object11 = document.querySelector('#object11');
   var object12 = document.querySelector('#object12');
   var object13 = document.querySelector('#object13');
   var object21 = document.querySelector('#object21');
   var object23 = document.querySelector('#object23');
-  // var object31 = document.querySelector('#object31');
-  // var object32 = document.querySelector('#object32');
-  // var object33 = document.querySelector('#object33');
+  var object31 = document.querySelector('#object31');
+  var object32 = document.querySelector('#object32');
+  var object33 = document.querySelector('#object33');
 
   innerObject11.addEventListener("input",function(){
     var Target = document.getElementById('target11'); 
