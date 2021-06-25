@@ -28,13 +28,13 @@ function initialState(){
   inputBtn.setAttribute("onclick", "startMandalat(hiddenTable)");
   inputBtn.textContent = "はじめる";
   // そのうち出力昨日を追加
-  // output.textContent = "作成したマンダラートを出力する"
+  output.textContent = "作成したマンダラートを出力する"
   body.appendChild(wrapper);
   header.appendChild(form);
   document.querySelector('form').appendChild(title);
   document.querySelector('form').appendChild(input);
   document.querySelector('form').appendChild(inputBtn);
-  //header.appendChild(output);
+  document.querySelector('form').appendChild(output);
 }
 
 // 親要素の表、子要素の表全てを作って、子要素はvisibility:hiddenにする
