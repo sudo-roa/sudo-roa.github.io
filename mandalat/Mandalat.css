@@ -18,6 +18,13 @@
   font-size: 30px;
   margin-bottom: 10px;
 }
+
+#output{
+  display: block;
+  margin-top: 10px;
+  margin-left:70px;
+}
+
 #initialInput input{
   display: block;
   float: left;

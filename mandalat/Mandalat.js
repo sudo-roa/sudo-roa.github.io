@@ -28,6 +28,7 @@ function initialState(){
   inputBtn.setAttribute("onclick", "startMandalat(hiddenTable)");
   inputBtn.textContent = "はじめる";
   // そのうち出力昨日を追加
+  output.setAttribute("id","output");
   output.textContent = "作成したマンダラートを出力する"
   body.appendChild(wrapper);
   header.appendChild(form);
