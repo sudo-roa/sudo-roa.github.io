@@ -34,7 +34,7 @@ function initialState(){
   document.querySelector('form').appendChild(title);
   document.querySelector('form').appendChild(input);
   document.querySelector('form').appendChild(inputBtn);
-  header.appendChild(output);
+  //header.appendChild(output);
 }
 
 // 親要素の表、子要素の表全てを作って、子要素はvisibility:hiddenにする
