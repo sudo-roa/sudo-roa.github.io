@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sugoroku.css">
+        <script src="sugoroku.js"></script>
+        <title>すごろく</title>
+    </head>
+    <header>
+        <div class="header-container">
+            <p class="title">ろあのすごろく</p>
+            <button class="header-contents" id="num-btn" onclick="sugoroku()">さいころ</button>
+            <input type="text" class="header-contents" id="num-textarea" cols="5" rows="1" placeholder="さいころを振ってください" readonly>
+            <p class="header-contents" >回数</p>
+            <input type="text" class="header-contents" id="count" cols="2" rows="1" readonly>
+        </div>
+    </header>
+    <body>
+        <div class="body-container">
+            <table>
+                <tr>                
+                    <td class="square player_right" id="masu1" style="background-color: bisque;">st</td>
+                    <td class="square" id="masu2"></td>
+                    <td class="square" id="masu3"></td>
+                    <td class="square" id="masu4"></td>
+                    <td class="square" id="masu5"></td>
+                    <td class="square" id="masu6"></td>
+                    <td class="square" id="masu7"></td>
+                    <td class="square" id="masu8"></td>
+                    <td class="square" id="masu9"></td>
+                </tr>
+                <tr>                
+                    <td class="square dummy yama"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square" id="masu10"></td>
+                </tr>
+                <tr>                
+                    <td class="square" id="masu31"></td>
+                    <td class="square" id="masu30"></td>
+                    <td class="square" id="masu29"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square" id="masu19"></td>
+                    <td class="square" id="masu18"></td>
+                    <td class="square" id="masu17"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square" id="masu11"></td>
+                </tr>
+                <tr>                
+                    <td class="square" id="masu32"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square" id="masu28"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square" id="masu20"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square" id="masu16"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square" id="masu12"></td>
+                </tr>
+                <tr>                
+                    <td class="square" id="masu33"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square" id="masu27"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square" id="masu21"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square" id="masu15"></td>
+                    <td class="square" id="masu14"></td>
+                    <td class="square" id="masu13"></td>
+                </tr>
+                <tr>                
+                    <td class="square" id="masu34"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square" id="masu26"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square" id="masu22"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square dummy yama"></td>
+                </tr>
+                <tr>                
+                    <td class="square" id="masu35"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square" id="masu25"></td>
+                    <td class="square" id="masu24"></td>
+                    <td class="square" id="masu23"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square" id="masu45"></td>
+                    <td class="square" id="masu46"></td>
+                    <td class="square" id="masu47"></td>
+                </tr>
+                <tr>                
+                    <td class="square" id="masu36"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square" id="masu44"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square" id="masu48"></td>
+                </tr>
+                <tr>                
+                    <td class="square" id="masu37"></td>
+                    <td class="square" id="masu38"></td>
+                    <td class="square" id="masu39"></td>
+                    <td class="square" id="masu40"></td>
+                    <td class="square" id="masu41"></td>
+                    <td class="square" id="masu42"></td>
+                    <td class="square" id="masu43"></td>
+                    <td class="square dummy yama"></td>
+                    <td class="square" id="masu49">goal</td>
+                </tr>
+            </table>
+            <table>
+                <tr>                
+                    <div class="out"></div>
+                    <div class="out"></div>
+                    <div class="out"></div>
+                    <div class="out"></div>
+                    <div class="out"></div>
+                    <div class="out"></div>
+                    <div class="out"></div>
+                    <div class="out"></div>
+                    <div class="out"></div>
+                    <div class="out"></div>
+                </tr>
+            </table>
+       
+        </div>
+    </body>
+</html>

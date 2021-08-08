@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+.title{
+    text-align: center;
+    font-size: 32px;
+}
+
+.num-btn{
+    margin:0px 300px;
+}
+
+.header-container{
+    width:560px;
+    margin:10px auto;
+}
+
+.header-contents{
+    display: inline-block;
+    margin:0px 16px 0px 0px;
+}
+
+.body-container{
+    height: 640px;
+    width: 560px;
+    padding:24px;
+    margin:10px auto;
+    border: solid ;
+
+}
+
+.player_right{
+    background-image: url(./images/walk_right.png);
+    z-index: 10;
+}
+
+.player_left{
+    background-image: url(./images/walk_left.png);
+    z-index: 10;
+}
+
+.square{
+    height: 56px;
+    width: 56px;
+    margin-top:8px;
+    margin-left: 8px;
+    border: solid;
+}
+
+.out{
+    display: inline-block;
+    /* padding:16px; */
+    margin:8px 0px;
+    background-image: url(./images/out1.png);
+    background-repeat: no-repeat;
+    height: 56px;
+    width: 56px;
+    border:none;
+}
+
+.yama{
+    background-image: url(./images/mountain.png);
+    height: 56px;
+    width: 56px;
+}
