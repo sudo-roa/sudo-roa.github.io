@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="./js/hieroglyph.js" defer></script>
+
+    <title>ひらひえ翻訳機</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1>
+            <a href="/">ひらひえ翻訳機</a>
+         </h1>
+         <nav class="pc-nav">
+            <ul>
+               <li><a href="#">ツイッター</a></li>
+               <li><a href="#">github</a></li>
+            </ul>
+         </nav>
+    </header>
+
+    <!-- main -->
+    <div class="main">
+        <hr>
+        <p>
+            ひらがな→ひえろぐりふ
+        </p>
+        <div>
+            <form method="post" action="" >
+                <textarea id="jtoh" type="textarea" placeholder="ひらがなを入力してください" cols="30" rows="2" ></textarea>
+                <textarea id="result_h" type="textarea" cols="30" rows="2" readonly=""></textarea>
+            </form>
+        </div>
+        <hr>
+        <p>
+            ヒエログリフ→ひらがな
+        </p>
+        <textarea id="htoj" type="textarea" cols="30" placeholder="ヒエログリフを入力してください" rows="2"></textarea>
+        <textarea id="result_j" type="textarea" cols="30" rows="2" readonly=""></textarea>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        copyright?
+    </footer>
+
+</body>
+</html>
