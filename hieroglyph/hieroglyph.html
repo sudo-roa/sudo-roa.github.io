@@ -1,57 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/sanitize.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="./js/hieroglyph.js" defer></script>
 
     <title>ひらひえ翻訳機</title>
 </head>
 
 <body>
-    <!-- header -->
-    <header>
-        <h1>
-            <a href="/">ひらひえ翻訳機</a>
-         </h1>
-         <nav class="pc-nav">
-            <ul>
-               <li><a href="#">ツイッター</a></li>
-               <li><a href="#">github</a></li>
-            </ul>
-         </nav>
-         <p>
-             ただの換字式暗号としてヒエログリフを使っているだけなので、
-             このサイトでしか通用しない暗号です。
-             独断と偏見でひらがな一文字一文字にヒエログリフを当てはめているだけです。
-         </p>
-    </header>
+    <div class="container">
 
-    <!-- main -->
-    <div class="main">
-        <hr>
-        <p>
-            ひらがな→ひえろぐりふ
-        </p>
-        <div>
-            <form method="post" action="" >
-                <textarea id="jtoh" type="textarea" placeholder="ひらがなを入力してください" cols="30" rows="3" ></textarea>
-                <textarea id="result_h" type="textarea" cols="30" rows="3" readonly=""></textarea>
-            </form>
+        <!-- header -->
+        <header>
+            <div class="header_container">
+                <h1>
+                    ひらひえ翻訳機
+                </h1>
+                <nav class="pc-nav">
+                    <ul>
+                        <li>
+                            <img class="icon" src="./img/twitter.png" alt="none">
+                            <a href="https://twitter.com/sudo___roa___">twitter</a>
+                        </li>
+                        <li>
+                            <img class="icon" src="./img/github.png" alt="none">
+                            <a href="https://github.com/sudo-roa">github</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <p>
+                ※ただ換字式暗号としての翻訳です。<br>
+                ※このサイトでしか通用しません。<br>
+            </p>
+        </header>
+    
+        <!-- main -->
+        <div class="main">
+            <hr>
+            <h2>
+                ひらがな → ヒエログリフ
+            </h2>
+            <div class="textbox">
+                <textarea id="jtoh" type="textarea" placeholder="ひらがなを入力してください" cols="40" rows="3" ></textarea>
+                <textarea id="result_h" type="textarea" cols="40" rows="3" readonly=""></textarea>
+            </div>
+            <hr>
+            <h2>
+                ヒエログリフ → ひらがな
+            </h2>
+            <p>
+                ※ヒエログリフ以外の文字が混入していると<br>
+                正しく翻訳できません<br>
+                ※改行の混入には特に気をつけてください
+            </p>
+            <div class="textbox">
+                <textarea id="htoj" type="textarea" cols="40" placeholder="ヒエログリフを入力してください" rows="3"></textarea>
+                <textarea id="result_j" type="textarea" cols="40" rows="3" readonly=""></textarea>
+            </div>
         </div>
-        <hr>
-        <p>
-            ヒエログリフ→ひらがな
-        </p>
-        <textarea id="htoj" type="textarea" cols="30" placeholder="ヒエログリフを入力してください" rows="3"></textarea>
-        <textarea id="result_j" type="textarea" cols="30" rows="3" readonly=""></textarea>
+    
+        <!-- footer -->
+        <footer>
+            <hr>
+            
+
+        </footer>
     </div>
-
-    <!-- footer -->
-    <footer>
-    </footer>
-
 </body>
 </html>
