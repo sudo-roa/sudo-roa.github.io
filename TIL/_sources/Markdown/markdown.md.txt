@@ -1,0 +1,89 @@
+# Sphinxでの文書の書き方
+
+## はじめに
+
+このSphinxでの文書の書き方について
+
+Sphinx内で利用できるMarkdown記法についての説明
+今回は、MySTを
+
+## Markdown
+
+Sphinx内でのマークダウン利用
+
+### インストール方法
+
+`$ pip install myst-parser`
+
+### SphinxでMySTを有効にする方法
+
+conf.pyファイルに以下の記述をする
+<br>
+```python 
+extensions = ["myst_parser"]
+```
+これによりMySTパーサーの拡張機能が有効になり、.mdの拡張子をもつドキュメントが全て解析される
+
+### Markdownでの記述方法
+
+| 要素 | 構文 |
+| --- | --- |
+| H1 | # |
+| H2 | ## |
+| H3 | ### |
+| H4 | #### |
+| H5 | ##### |
+| H6 | ###### |
+| 太字 | \*\*bold\*\* |
+| イタリック | \*italic\* |
+| インラインコード | \`code\` |
+| 引用 | \> quote |
+| テーマ別ブレイク | --- |
+| 自動リンク | \<https://github.com\> |
+| URLリンク | \[github\]\(https://github.com\) |
+| 画像リンク | \!\[alt\]\(https://github.com\) |
+| リンク定義 | [link]: https://github.com |
+| 参照リンク | [title][link] |
+| 順序付きリスト | 1. item <br> 2. item |
+| 順序なしリスト | - item <br> - item |
+| コード | \`\`\`lang <br> hogehoge <br> \`\`\` |
+| コメント | \% comment |
+
+## Mermaid
+
+Sphinx内でのMermaidの利用
+sphinxcontrib.mermaidによってMySTを利用してMermaidを使用できるように拡張する
+
+### インストール方法
+
+`pip install sphinxcontrib-mermaid`
+
+### 有効にする方法
+
+conf.py
+```python
+extensions = [
+    "myst-parser",
+    "sphinxcontrib.mermaid",
+]
+```
+
+### Mermaidの記述方法
+
+````
+```{mermaid}
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+````
+
+```{mermaid}
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
